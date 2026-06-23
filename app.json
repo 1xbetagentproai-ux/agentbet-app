@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "AgentBet",
+    "slug": "agentbet-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#0B1D3A",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "AgentBet a besoin d'accéder à vos photos pour télécharger une preuve de paiement.",
+          "cameraPermission": "AgentBet a besoin d'accéder à votre appareil photo pour prendre une preuve de paiement."
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.mozart.agentbet",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2563EB"
+      },
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+    },
+    "ios": {
+      "bundleIdentifier": "com.mozart.agentbet",
+      "supportsTablet": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+    }
